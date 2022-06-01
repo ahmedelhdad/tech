@@ -1288,8 +1288,8 @@ a
 .decisions
 {
     direction: rtl;
-    display: flex;
     padding-bottom: 100px;
+    display: none;
 }
 .decisions .container
 {
