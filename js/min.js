@@ -186,7 +186,7 @@ btnIndividually.onclick = function()
     // create Image 
     let imageInd = document.createElement('img')
     imageInd.className = "imgIndividually"
-    imageInd.src ="../img/Individually.jpg"
+    imageInd.src ="img/Individually.jpg"
     boxImage.appendChild(imageInd)
 }
 // swiper 
@@ -250,10 +250,17 @@ btnAverage.onclick = function()
 }
 // decisions
 
-let btnDecisions=document.querySelector(".class")
 
-btnDecisions.onclick = function()
+
+
+let iconSetting = document.querySelector('.fa-gear')
+let setting = document.querySelector('.setting')
+let icon = document.querySelector('.icon')
+
+
+icon.onclick = () => 
 {
-    document.querySelector('.decisions .box').classList.toggle('open')
-    
+    iconSetting.classList.toggle('fa-spin')
+    icon.classList.toggle('open')
+    setting.classList.toggle('open')
 }
