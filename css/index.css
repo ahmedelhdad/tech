@@ -832,8 +832,19 @@ h3
 
 .center
 {
+    position: relative;
     display: flex;
     justify-content: space-around;
+}
+.center::before
+{
+    content: "";
+    position: absolute;
+    left: 1;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-color);
 }
 @media(max-width:991px)
 {
@@ -1313,8 +1324,21 @@ h3
 }
 .table table tbody  tr  .two 
 {
+    position: relative;
     display: flex;
     justify-content: space-around;
+    
+}
+.table table tbody  tr  .two::before
+{
+    content: '';
+    position: absolute;
+    left: 1;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--main-color);
+
 }
 @media(max-width:991px)
 {
@@ -1377,7 +1401,7 @@ h3
 .calculator .box
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     gap: 20px;
 }
 .calculator .box .box-item
