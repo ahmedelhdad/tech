@@ -43,6 +43,7 @@
             <div class="main">
                 <i class="fas fa-bars toggle-menu"></i>
                 <ul class="main-nav">
+                    <li data-title="allTeam"><a href="#allTeam"><i class="far fa-user fa-fw"></i> تعريف  </a></li>
                     <li data-title="help"><a href="#"><i class="far fa-user fa-fw"></i> المساعده  </a></li>
                     <li data-title="questions"><a href="#questions"><i class="fa-thin fa-question"></i> الاستفسارات</a></li>
                     <li data-title="decisions"><a href="#decisions"><i class="far fa-calendar-alt fa-fw"></i> مقرر لائحه برنامج اخصائي تكنولوجيا</a></li>
@@ -98,13 +99,13 @@
                 <div class="clear"></div>
                 <div class="right"  data-title="4">ولكي تسجل في المواد التي تريد دراستها يجب عليك ملئ نموذج تسجيل مقررات. البرنامج لكل مستوي ويجب ان يكون للمرشد الاكاديمي نسخه من النموذج .</div>
                 <div class="clear"></div>
-                <div class="left"  data-title="5">الفصل الصيفي سوف تأخذه في حاله انك تعسرت (اي رسبت) في ماده ما أو (انك عايز تخلص من المواد اللي عندك).</div>
+                <div class="left"  data-title="5">الفصل الصيفي سوف تأخذه في حاله انك تعثرت (اي رسبت) في ماده ما أو (انك عايز تخلص من المواد اللي عندك).</div>
                 <div class="clear"></div>
-                <div class="right"  data-title="6">لا يوجد رسوب في نظام الساعات المعتمدة بل تسمي تعسر .</div>
+                <div class="right"  data-title="6">لا يوجد رسوب في نظام الساعات المعتمدة بل تسمي تعثر .</div>
                 <div class="clear"></div>
-                <div class="left"  data-title="7">في حاله ان تم وتعسرت في ماده ما سوف تأخذ الفصل الصيفي في هذه الماده اذا فتحت الكليه الفصل الصيفي للماده التي تعسرت بها</div>
+                <div class="left"  data-title="7">في حاله ان تم وتعثرت في ماده ما سوف تأخذ الفصل الصيفي في هذه الماده اذا فتحت الكليه الفصل الصيفي للماده التي تعثرت بها</div>
                 <div class="clear"></div>
-                <div class="right"  data-title="8">في حاله ان الكليه لم تفتح فصل صيفي للماده التي تعسرت بها سوف تنتظر حتي الفصل الدراسي القادم مع الفرقه الدراسيه الجديده.</div>
+                <div class="right"  data-title="8">في حاله ان الكليه لم تفتح فصل صيفي للماده التي تعثرت بها سوف تنتظر حتي الفصل الدراسي القادم مع الفرقه الدراسيه الجديده.</div>
                 <div class="clear"></div>
                 <div class="left"  data-title="9">اذا تعثر في ماده ما وهذه الماده متطلب سابق لماده اخري سوف تنتظر الكليه حتي تفتح فصل صيفي في الماده والمتعثر بها (المتطلب الجديد اي الماده اللي مرتبطه بالماده الني تعثرت بها) لم يتم دراستها حتي النجاج في المتطلب السابق لها (الماده اللي تعثر فيها).</div>
             </div>
@@ -759,27 +760,39 @@
             </div>
             <div class="setting ">
                 <div class="title-one">
-                    <h3>اختياري</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
+                    <h3>متطلبات الجامعة	</h3>
+                    <div class="items">
+                        <div class="box">
+                            <h4>اجبارية</h4>
+                            <h5 style="--color:#F5DF99"></h5>
+                        </div>
+                        <div class="box">
+                            <h4>اختيارية</h4>
+                            <h5 style="--color:#A0D995"></h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="title-two">
-                    <h3>اجباري</h3>
-                    <ul>
-                        <li style="--color:rgb(0, 30, 108)"></li>
-                        <li style="--color:rgb(3, 83, 151)"></li>
-                        <li style="--color:rgb(232, 99, 10)"></li>
-                        <li style="--color:rgb(252, 217, 0)"></li>
-                        <li style="--color:rgb(47, 143, 157)"></li>
-                        <li style="--color:rgb(59, 172, 182)"></li>
-                        <li style="--color:rgb(130, 219, 216)"></li>
-                        <li style="--color:rgb(179, 232, 229)"></li>
-                        <li style="--color:rgb(0, 255, 171)"></li>
-                        <li style="--color:rgb(20, 195, 142)"></li>
-                        <li style="--color:rgb(184, 241, 176)"></li>
-                        <li style="--color:rgb(227, 252, 191)"></li>
-                    </ul>
+                <div class="title-one">
+                    <h3>متطلبات الكلية	 	</h3>
+                    <div class="items">
+                        <div class="box">
+                            <h4>اجبارية</h4>
+                            <h5 style="--color:#6CC4A1"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-one">
+                    <h3>متطلبات البرنامج المدرسي</h3>
+                    <div class="items">
+                        <div class="box">
+                            <h4>اجبارية</h4>
+                            <h5 style="--color:#4CACBC"></h5>
+                        </div>
+                        <div class="box">
+                            <h4>اختيارية</h4>
+                            <h5 style="--color:#94B49F"></h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -787,145 +800,146 @@
 
             <!-- ------------ class 1  ------------  -->
             <div class="m1-first">
-                <h1 class="color_first">م1 خريف</h1>
+                <h1 class="color" style="--color:#A084CF">م1 خريف</h1>
                 <div class="box">
                     <ul>
-                        <li>مدخل الي تكنولوجيا التعليم</li>
+                        <li class="color_four">مدخل الي تكنولوجيا التعليم</li>
                         <li class="color_four">مقدمه في الحاسب الالي</li>
-                        <li class="color_three">مراكز مصادر الالي</li>
-                        <li>بحوث الفعل في التخصص</li>
-                        
+                        <li class="color_four">مراكز مصادر التعلم</li>
+                        <li class="color_four">بحوث الفعل في التخصص</li>
                     </ul>
                     <ul>
-                        <li class="color_two">مدخل الي العلوم التربويه</li>
-                        <li class="color_first">المناهج وتنظيماتها</li>
-                        <li>مقرر تخصص اختياري</li>
-                        <li>مقرر جامعه اختياري</li>
+                        <li class="color_three">مدخل الي العلوم التربويه</li>
+                        <li class="color_three">المناهج وتنظيماتها</li>
+                        <li class="color_five">مقرر تخصص اختياري</li>
+                        <li class="color_first">مقرر جامعه اختياري</li>
+                        
                     </ul>
                 </div>
             </div>
             
             <div class="m1-first">
-                <h1 class="color_two">م1 ربيع </h1>
+                <h1 class="color" style="--color:#A084CF">م1 ربيع </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_five">طرق تدريس عامة </li>
-                        <li class="color_seven">اساسيات اتصوير الرقمي</li>
-                        <li>مقرر جامعة اختياري </li>
-                        <li>اساسيات شبكات الحاسب الالي </li>
+                        <li class="color_three">طرق تدريس عامة </li>
+                        <li class="color_four">اساسيات اتصوير الرقمي</li>
+                        <li class="color_first">مقرر جامعة اختياري </li>
+                        <li class="color_four">اساسيات شبكات الحاسب الالي </li>
                         
                     </ul>
                     <ul>
-                        <li class="color_six">مدخل الي العلوم النفسية </li>
-                        <li>مقرر تخصص اختياري </li>
-                        <li>حقوق انسان ومكافحة الفساد </li>
-                        <li class="color_three">مصادر التعلم السمعية الرقمية </li>
+                        <li class="color_three">مدخل الي العلوم النفسية </li>
+                        <li class="color_five">مقرر تخصص اختياري </li>
+                        <li class="color_first">حقوق انسان ومكافحة الفساد </li>
+                        <li class="color_four">مصادر التعلم السمعية الرقمية </li>
                     </ul>
                 </div>
             </div>
             <div class="m1-first">
             <!-- ------------ class 2  ------------  -->
-                <h1 class="color_three"> م2 خريف </h1>
+                <h1 class="color" style="--color:#F2D1D1"> م2 خريف </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_five">التعليم التدريس المصغر </li>
-                        <li class="color_nine">ادارة الفصول الالكترونية </li>
-                        <li>مقرر جامعي اختياري </li>
+                        <li class="color_three">  التعليم _ التدريس المصغر (تخصص) </li>
+                        <li class="color_four">ادارة الفصول الالكترونية </li>
+                        <li class="color_first">مقرر جامعي اختياري </li>
                         <li class="color_four">قواعد بيانات </li>
-                        <li class="color_seven">التصوير الرقمي والثقتفة البصرية .</li>
+                        <li class="color_four">التصوير الرقمي والثقافه البصرية .</li>
                     </ul>
                     <ul>
-                        <li class="color_eight">علم النفس النمو </li>
-                        <li>مقرر تخصص اختياري </li>
-                        <li class="color_two">تاريخ التربية ونظام التعليم في مصر </li>
+                        <li class="color_three">علم النفس النمو </li>
+                        <li class="color_five">مقرر تخصص اختياري </li>
+                        <li class="color_three">تاريخ التربية ونظام التعليم في مصر </li>
                     </ul>
                 </div>
             </div>
             <div class="m1-first">
-                <h1 class="color_four"> م2 ربيع </h1>
+                <h1 class="color" style="--color:#F2D1D1"> م2 ربيع </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_six">علم نفس تعليمي (نظريات التعلم)</li>
-                        <li>مهارات التفكير وحل المشكلات </li>
-                        <li>تطبيقات الهواتف النقالة </li>
-                        <li class="color_nine">نظم ادارة التعلم الالكتروني </li>
+                        <li class="color_three">علم نفس تعليمي (نظريات التعلم)</li>
+                        <li class="color_first">مهارات التفكير وحل المشكلات </li>
+                        <li class="color_four">تطبيقات الهواتف النقالة </li>
+                        <li class="color_four">نظم ادارة التعلم الالكتروني </li>
                     </ul>
                     <ul>
-                        <li class="color_ten">لغات البرمجة المتطورة </li>
-                        <li>سيكولوجية  ذوي الاحتياجات الخاصة</li>
-                        <li>الرسومات الثابتة الرقمية </li>
+                        <li class="color_four"> 1 لغات البرمجة المتطورة </li>
+                        <li class="color_three">سيكولوجية  ذوي الاحتياجات الخاصة</li>
+                        <li class="color_four">الرسومات الثابتة الرقمية </li>
                     </ul>
                 </div>
             </div>
             <div class="m1-first">
                 <!-- ------------ class 3  ------------  -->
-                <h1 class="color_five">م3 خريف  </h1>
+                <h1 class="color" style="--color:#FF8243">م3 خريف  </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_five">تدريب ميداني </li>
-                        <li>تكنولوجيا التعليم </li>
-                        <li class="color_five">طرائق واستراتيجيات التريس في التخصص .</li>
+                        <li class="color_four"> 1 تدريب ميداني </li>
+                        <li class="color_three">طرق واستراتيجيات التريس في التخصص .</li>
+                        <li class="color_three">تكنولوجيا التعليم</li>
+                        <li class="color_three">الاصول الفلسفيه للتربيه</li>
+                        
 
                     </ul>
                     <ul>
-                        <li>الاصول الاجتماعية والثقافية للتربية </li>
-                        <li>مشكلات الحاسب الالي </li>
-                        <li class="color_ten"> لغات البرمجة المتطورة  </li>
-           
+                        <li class="color_three">الاصول الاجتماعية والثقافية للتربية </li>
+                        <li class="color_four">مشكلات الحاسب الالي </li>
+                        <li class="color_four">  2 لغات البرمجة المتطورة  </li>
+            
                     </ul>
                 </div>
             </div>
             <div class="m1-first">
-                <h1 class="color_six"> م3 ربيع </h1>
+                <h1 class="color" style="--color:#FF8243"> م3 ربيع </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_five">تدريب ميداني 2 </li>
-                        <li class="color_eleven">مقرر تخصص اختياري </li>
-                        <li>الجولات الافتراضية </li>
-                        <li>تكنولوجيا الويب </li>
-                        <li class="color_nine">التقويم الالكتروني </li>
+                        <li class="color_four">تدريب ميداني 2 </li>
+                        <li class="color_five">مقرر تخصص اختياري </li>
+                        <li class="color_four">الجولات الافتراضية </li>
+                        <li class="color_four">تكنولوجيا الويب </li>
+                        <li class="color_four">التقويم الالكتروني </li>
                     </ul>
                     <ul>
-                        <li>مقرر تخصص اختياري </li>
-                        <li>الاصول النفسية للتربية </li>
-                        <li>المكتبات الرقمية </li>
-                        <li class="color_eight">الصحة النفسية والارشاد النفسي </li>
+                        <li class="color_five">مقرر تخصص اختياري </li>
+                        <li class="color_first">الاصول النفسية للتربية </li>
+                        <li class="color_four">المكتبات الرقمية </li>
+                        <li class="color_three">الصحة النفسية والارشاد النفسي </li>
                     </ul>
                 </div>
             </div>
             <div class="m1-first">
                 <!-- ------------ class 4  ------------  -->
-                <h1 class="color_seven">م4 خريف  </h1>
+                <h1  class="color" style="--color:#FFC54D">م4 خريف  </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_nine">التريب الميداني 3</li>
-                        <li>اخلاقيات المهنة </li>
-                        <li>قراءات باللغة الانجليزية في التخصص </li>
-                        <li>بيئات التعلم الالكتروني</li>
-                        <li class="color_eleven">تطبيقات في التعليم الالكتروني </li>
+                        <li class="color_four">التدريب الميداني 3</li>
+                        <li class="color_first">اخلاقيات المهنة </li>
+                        <li class="color_four">قراءات باللغة الانجليزية في التخصص </li>
+                        <li class="color_four">بيئات التعلم الالكتروني</li>
+                        <li class="color_four">تطبيقات في التعليم الالكتروني </li>
                     </ul>
                     <ul>
-                        <li>مقرر جامعة اختياري </li>
-                        <li>التربية المقارنة والادارة التعليمية </li>
-                        <li>تكنولوجيا الوسائط المتعددة الرقمية </li>
-                        <li class="color_six">علم نفس تعليمي (قدارت عقلية )</li>
+                        <li class="color_three">التربية المقارنة والادارة التعليمية </li>
+                        <li class="color_four">تكنولوجيا الوسائط المتعددة الرقمية </li>
+                        <li class="color_three">علم نفس تعليمي (قدارت عقلية )</li>
                     </ul>
                 </div>
             </div>
             <div class="m1-first">
-                <h1 class="color_ten"> م4 ربيع </h1>
+                <h1  class="color" style="--color:#FFC54D"> م4 ربيع </h1>
                 <div class="box">
                     <ul>
-                        <li class="color_nine">التريب الميداني 4</li>
-                        <li>مقرر تخصص اختياري </li>
-                        <li>الجودة وتطبيقاتها في المؤسسات التعليمية </li>
-                        <li>تكنولوجيا تعليم الطفولة المبكرة </li>
+                        <li class="color_four">التريب الميداني 4</li>
+                        <li class="color_five">مقرر تخصص اختياري </li>
+                        <li class="color_three">الجودة وتطبيقاتها في المؤسسات التعليمية </li>
+                        <li class="color_four">تكنولوجيا تعليم الطفولة المبكرة </li>
 
                     </ul>
                     <ul>
-                        <li>مشروع التخرج </li>
-                        <li>الاحصاء التطبيقي </li>
-                        <li class="color_first">تخطيط وتطوير وتقويم المناهج</li>
+                        <li class="color_four">مشروع التخرج </li>
+                        <li class="color_four">الاحصاء التطبيقي </li>
+                        <li class="color_three">تخطيط وتطوير وتقويم المناهج</li>
                     </ul>
                 </div>
             </div>
@@ -950,7 +964,7 @@
         </div>
         <div class="box">
             <div class="question"> هل يوجد رسوب في نظام الساعات المعتمدة ؟</div>
-            <p class="anser">لا يوجد رسوب بل يسمي تعسر </p>
+            <p class="anser">لا يوجد رسوب بل يسمي تعثر </p>
         </div>
         <div class="box">
             <div class="question">ماهو نظام الحضور في الساعات المعتمدة ؟ </div>
@@ -1003,10 +1017,101 @@
     <!-- -------------- Start help  -->
     <div class="help">
         <div class="container">
+            
         </div>
     </div>
     <!-- -------------- End help  -->
+    <!-- -------------- Start About  -->
+    <div class="allTeam">
+        <div class="container">
 
+
+           <div class="clear"></div>
+           <div class="left" data-title="1">
+            <div class="image">
+                <img src="img/image team/01.jpg">
+            </div>
+            <h3>Name : Ahmed Mahmoud Mostafa</h3>
+            <h3>Email :<a href="mailto:am5206@fayoum.edu.eg">am5206@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="right" data-title="2">
+            <div class="image">
+                <img src="img/image team/02.jpg">
+            </div>
+            <h3>Name : Mona Ebrahim Mahmoud             </h3>
+            <h3>Email :<a href="mailto:mi1381@fayoum.edu.eg">mi1381@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="left" data-title="3">
+            <div class="image">
+                <img src="img/image team/03.jpg">
+            </div>
+            <h3>Name : Shrouk Khaled Fathy Ayat</h3>
+            <h3>Email :<a href="mailto:www.shroukkhaled@gmail.com">www.shroukkhaled@gmail.com</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="right" data-title="4">
+            <div class="image">
+                <img src="img/image team/04.jpg">
+            </div>
+            <h3>Name : Hager Saad Aldin Yahia            </h3>
+            <h3>Email :<a href="mailto:hs1697@fayoum.edu.eg">hs1697@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="left" data-title="5">
+            <div class="image">
+                <img src="img/image team/05.jpg">
+            </div>
+            <h3>Name : Manar Aref Ahmed            </h3>
+            <h3>Email :<a href="mailto:ma2947@fayoum.edu.eg">ma2947@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="right" data-title="6">
+            <div class="image">
+                <img src="img/image team/06.jpg">
+            </div>
+            <h3>Name : Manar Kotp Taha</h3>
+            <h3>Email :<a href="mailto:mq1238@fayoum.edu.eg">mq1238@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="left" data-title="7">
+            <div class="image">
+                <img src="img/image team/07.jpg">
+            </div>
+            <h3>Name : Hagar Mahmoud Abdelaziz            </h3>
+            <h3>Email :<a href="mailto:hm2376@fayoum.edu.eg">hm2376@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="right" data-title="8">
+            <div class="image">
+                <img src="img/image team/08.jpg">
+            </div>
+            <h3>Name : Mawada Ahmed Mohammed</h3>
+            <h3>Email :<a href="mailto:ma2950@fayoum.edu.eg">ma2950@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="left" data-title="9">
+            <div class="image">
+                <img src="img/image team/09.jpg">
+            </div>
+            <h3>Name : Basma Muhammed ElAshiry             </h3>
+            <h3>Email :<a href="mailto:bm1304@fayoum.edu.eg">bm1304@fayoum.edu.eg</a></h3>
+           </div>
+           <div class="clear"></div>
+           <div class="right" data-title="10">
+            <div class="image">
+                <img src="img/image team/10.jpg">
+            </div>
+            <h3>Name : Manar Salama Abdelazez            </h3>
+            <h3>Email :<a href="mailto:Ms2598@fayoum.edu.eg">Ms2598@fayoum.edu.eg</a></h3>
+           </div>
+
+
+
+        </div>
+    </div>
+    <!-- -------------- End About  -->
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

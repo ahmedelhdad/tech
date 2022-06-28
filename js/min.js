@@ -61,7 +61,9 @@ let calculator = document.querySelector('.calculator')
 let decisions = document.querySelector('.decisions')
 let questions = document.querySelector('.questions')
 let help = document.querySelector('.help')
+let allTeam = document.querySelector('.allTeam')
 
+allTeam.style.display = 'none'
 allLinks.forEach((link) => {
     link.addEventListener('click' , (e) => {
         credit.style.display = 'none'
@@ -72,6 +74,7 @@ allLinks.forEach((link) => {
         decisions.style.display = 'none'
         questions.style.display = 'none'
         help.style.display = 'none'
+        allTeam.style.display = 'none'
         if(e.currentTarget.dataset.title === credit.getAttribute('class'))
         {
             credit.style.display = 'block'
@@ -124,6 +127,13 @@ allLinks.forEach((link) => {
         {
             help.style.display = 'block'
             help.scrollIntoView({
+                behavior: "smooth"
+            })
+
+        }else if(e.currentTarget.dataset.title === allTeam.getAttribute('class'))
+        {
+            allTeam.style.display = 'block'
+            allTeam.scrollIntoView({
                 behavior: "smooth"
             })
 

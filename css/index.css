@@ -248,7 +248,16 @@ a
 {
     font-size: 20px;
     padding: 0 5px;
-    color: #85857a;
+    color: var(--color-pri);
+}
+@media(max-width:991px)
+{
+    .color-span
+    {
+        font-size: 20px;
+        padding: 0 5px;
+        color: white
+    }
 }
 /* End Global Rules */
 /* --------------- Start Header ---------------  */
@@ -1604,69 +1613,44 @@ h3
     }
 }
 
-.decisions ul li 
-{
-    background-color: var(--main-color-alt);
-}
+
+
 .color_first
 {
-    background-color: rgb(0, 30, 108) !important;
-    color: white !important;
+    background-color: #F5DF99 !important;
+    color: rgb(16, 10, 29) !important;
+    font-weight: bold;
 }
 .color_two
 {
-    background-color: rgb(3, 83, 151) !important;
-    color: white !important;
+    background-color: #A0D995 !important;
+    color: rgb(16, 10, 29) !important;
+    font-weight: bold;
+
 }
 .color_three
 {
-    background-color: rgb(232, 99, 10) !important;
-    color: white !important;
+    background-color: #6CC4A1 !important;
+    color: rgb(16, 10, 29) !important;
+    font-weight: bold;
+
 }
 .color_four
 {
-    background-color: rgb(252, 217, 0) !important;
-    color: white !important;
+    background-color: #4CACBC !important;
+    color: rgb(16, 10, 29) !important;
+    font-weight: bold;
+
 }
 .color_five
 {
-    background-color: rgb(47, 143, 157) !important;
-    color: white !important;
+    background-color: #94B49F !important;
+    color: rgb(16, 10, 29) !important;
+    font-weight: bold;
 }
-.color_six
+.m1-first .color 
 {
-    background-color: rgb(59, 172, 182) !important;
-    color: white !important;
-}
-.color_seven
-{
-    background-color: rgb(130, 219, 216) !important;
-    color: white !important;
-}
-.color_eight
-{
-    background-color: rgb(179, 232, 229) !important;
-    color: white !important;
-}
-.color_nine
-{
-    background-color: rgb(0, 255, 171) !important;
-    color: white !important;
-}
-.color_ten
-{
-    background-color: rgb(20, 195, 142) !important;
-    color: white !important;
-}
-.color_eleven
-{
-    background-color: rgb(184, 241, 176) !important;
-    color: white !important;
-}
-.color_twelve
-{
-    background-color: rgb(227, 252, 191) !important;
-    color: white !important;
+    background-color: var(--color);
 }
 .setting
 {
@@ -1679,6 +1663,10 @@ h3
     transition: 0.5s;
     visibility: hidden;
     direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .setting.open 
 {
@@ -1700,53 +1688,39 @@ h3
 {
     left: 200px;
 }
-.setting 
+.title-one
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.setting .title-one,
-.setting .title-two  
-{
-    width: 90%;
-    margin-top: 100px;
-    padding: 10px;
-    box-shadow:  0 0 10px white;
-    background-color: var(--color-pri-light);
-}
-.setting .title-one h3,
-.setting .title-two h3 
-{
+    width: 180px;
+    margin: auto;
+    padding: 20px;
     color: white;
-    font-weight: bold;
+}
+.title-one h3
+{
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
 }
-.setting .title-one ul li 
-{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    margin: auto;
-}
-.setting .title-two ul
+
+.setting .items 
 {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.setting .title-two ul li 
+
+.setting .items .box h5
 {
     width: 20px;
     height: 20px;
+    background-color: white;
     border-radius: 50%;
-    background-color: var(--color);
+    text-align: center;
     margin: auto;
+    background-color: var(--color);
 }
+
+
+
 /* --------------- End decisions ---------------  */
 
 /* --------------- Start questions  ---------------  */
@@ -1819,3 +1793,124 @@ h3
     display: none;
 }
 /* --------------- End Help ---------------  */
+/* --------------- End allTeam ---------------  */
+.allTeam
+ {
+    background: rgb(2, 2, 26);
+    position: relative;
+    height: 100%;
+    display: none;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.allTeam::before
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+.allTeam::after
+{
+    content: "";
+    position: fixed;
+    top: 200px;
+    left: 250px;
+    height: 200px;
+    background: rgb(183, 0, 255);
+    filter: blur(140px);
+}
+.allTeam .left,
+.allTeam .right 
+{
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 100px;
+    width: 43%;
+    position: relative;
+}
+
+.allTeam .left::before,
+.allTeam .right::before
+{
+    content: attr(data-title);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    box-shadow: 0 0 10px var(--color-pri);
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.allTeam .left::before
+{
+    left: calc(100% + 12.5%);
+}
+.allTeam .right::before
+{
+    right: calc(100% + 12.5%);
+}
+.allTeam .left
+{
+    position: relative;
+    float: left;
+}
+.allTeam .right
+{
+    float: right;
+}
+.clear
+{
+    clear: both;
+}
+.allTeam .left .image,
+.allTeam .right .image
+{
+    position: absolute;
+    right: -17px;
+    top: -50px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+.allTeam .left .image img,
+.allTeam .right .image img 
+
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.allTeam .left h3,
+.allTeam .right h3 
+{
+    text-align: left;
+    padding: 0 40px;
+}
+@media(max-width:991px)
+{
+    .allTeam .left,
+    .allTeam .right 
+    {
+        width: 100%;
+    }
+    .allTeam .left::before,
+    .allTeam .right::before
+
+    {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -70px;
+    }
+}
+/* --------------- End About ---------------  */
